@@ -93,8 +93,8 @@ services:
     depends_on:
       - wazuh-indexer
     links:
-      - wazuh.indexer:wazuh.indexer
-      - wazuh.manager:wazuh.manager
+      - wazuh-indexer:wazuh.indexer
+      - wazuh-manager:wazuh.manager
 
 volumes:
   wazuh_api_configuration:
